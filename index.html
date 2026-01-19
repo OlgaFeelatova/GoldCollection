@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<title>GB Landing Page</title>
+<style>
+  /* Загальний стиль сторінки */
+  body {
+    margin: 0;
+    padding: 0;
+    background: #111; /* темний фон */
+    color: #fff;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Контейнер для фрази */
+  .phrase {
+    margin: 40px 0;
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  /* Сітка фотографій */
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    width: 90%;
+    max-width: 1200px;
+  }
+
+  .grid img {
+    width: 150px; 
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  /* хаотичний ефект через різний розмір та повороти */
+  .grid img:nth-child(3n) { transform: rotate(-5deg); width: 180px; height: 180px; }
+  .grid img:nth-child(4n) { transform: rotate(3deg); width: 130px; height: 130px; }
+  .grid img:nth-child(5n) { transform: rotate(-2deg); width: 160px; height: 160px; }
+</style>
+</head>
+<body>
+
+<!-- ТУТ МОЖНА МІНЯТИ ФРАЗУ -->
+<div class="phrase">Тут твоя фраза GB</div>
+
+<!-- Сітка фотографій -->
+<div class="grid">
+  <img src="https://placekitten.com/200/200" alt="cat">
+  <img src="https://placekitten.com/201/200" alt="cat">
+  <img src="https://placekitten.com/200/201" alt="cat">
+  <img src="https://placekitten.com/202/200" alt="cat">
+  <img src="https://placekitten.com/200/202" alt="cat">
+  <img src="https://placekitten.com/203/200" alt="cat">
+  <img src="https://placekitten.com/200/203" alt="cat">
+  <img src="https://placekitten.com/204/200" alt="cat">
+</div>
+
+</body>
+</html>
